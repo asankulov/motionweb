@@ -14,18 +14,20 @@ console.log(students[1]);
 
 console.log(students.length);
 
-students.push('Kylych');
+students.push('Kylych', 'Umut');
 students.push('Dastan');
 console.log(students);
-
+console.log('-----')
 const lastStudent = students.pop();
 
 console.log(students);
-// console.log(lastStudent);
-
+console.log('-----')
+console.log(lastStudent);
+console.log('------------');
 students.shift();
-
 console.log(students);
+
+console.log('------------');
 
 students.unshift('Dastan');
 students.unshift('Azamat');
@@ -37,7 +39,7 @@ const wallet = [100 * 2, 500, 200];
 const points = [3.6, 4.0, 3.8, 3.3];
 
 const mixed = [100, true, 'Hello', points];
-
+console.log(mixed);
 
 
 
