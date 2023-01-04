@@ -22,3 +22,11 @@ const evenNumbers = numbers.filter((value) => value % 2 === 1);
 
 console.log(oddNumbers);
 console.log(evenNumbers);
+
+const filledNumbers = numbers.fill(0, 1, 3);
+console.log(filledNumbers);
+console.log('-----------------');
+
+const arr = Array(10);
+const filledArr = arr.fill(0);
+console.log(filledArr);
