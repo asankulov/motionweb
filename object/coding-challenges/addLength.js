@@ -5,3 +5,6 @@ function addLength(str) {
     return val + ' ' + val.length;
   });
 }
+
+const num1 = 120.3453423436;
+console.log(num1.toFixed(2));

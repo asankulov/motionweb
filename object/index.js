@@ -81,6 +81,6 @@ const student = {
 // Object.assign(student, person, { gender: 'male' });
 const combinedObject = Object.assign({}, person, student);
 console.log(combinedObject);
-console.log(student);
+// console.log(student);
 
 const array = [{ score: 1.9 }, { name: 'Alikhan' }];
