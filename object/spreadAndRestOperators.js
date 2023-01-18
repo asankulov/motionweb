@@ -3,9 +3,10 @@ const cats = [{ name: 'Tom', age: 2 }, { name: 'Murka', age: 4 }];
 // const tom = cats[0];
 // const murka = cats[1];
 
-const [tom, murka] = cats;
+const [tom, murka, vaska = { name: 'Vaska', age: 5 }] = cats;
 console.log(tom);
 console.log(murka);
+console.log(vaska);
 
 const dogs = [{ name: 'Balto', color: 'blue' }, { name: 'Sharik', color: 'black' }, { name: 'Rembo', color: 'grey' }];
 
@@ -23,10 +24,10 @@ console.log(Math.min(...numbers));
 const tuzik = { name: 'Tuzik', color: 'black-white' };
 // const tuzikName = tuzik.name;
 // const tuzikColor = tuzik.color;
-const { name, color, age } = tuzik;
-console.log(name);
-console.log(color);
-console.log(age);
+// const { name, color, age } = tuzik;
+// console.log(name);
+// console.log(color);
+// console.log(age);
 
 const { name: tuzikName, color: tuzikColor } = tuzik;
 console.log(tuzikName, tuzikColor);
@@ -48,3 +49,11 @@ console.log(numbers.toString(), numbers);
 
 console.log('1' == 1);
 console.log('1' === 1);
+
+const user = {
+  name: 'John',
+  years: 30,
+};
+
+const { name = 'Alikhan', years: age, isAdmin = false } = user;
+console.log(name, age, isAdmin);
