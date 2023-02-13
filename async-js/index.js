@@ -21,7 +21,7 @@ function funcWithPromise(arg) {
 //   });
 
 
-funcWithPromise(true)
+funcWithPromise(false)
   .then((value) => {
     console.log(value);
     return 1;
@@ -33,27 +33,30 @@ funcWithPromise(true)
   .catch((error) => {
     console.log('reject');
     console.log(error);
-  });
+  })
+  .finally(() => {
+    console.log('finally code');
+  })
 
-console.log('code after settimeout');
-
-
-function syncFunc(arg) {
-  if (arg) {
-    return 'true sync value';
-  }
-
-  return 'false sync value';
-}
-
-const syncFuncValue = syncFunc(true);
-
-console.log(syncFuncValue);
+console.log('code after setTimeout');
 
 
-const asyncFuncValue = funcWithPromise(true);
-
-console.log(asyncFuncValue);
+// function syncFunc(arg) {
+//   if (arg) {
+//     return 'true sync value';
+//   }
+//
+//   return 'false sync value';
+// }
+//
+// const syncFuncValue = syncFunc(true);
+//
+// console.log(syncFuncValue);
+//
+//
+// const asyncFuncValue = funcWithPromise(true);
+//
+// console.log(asyncFuncValue);
 
 
 
