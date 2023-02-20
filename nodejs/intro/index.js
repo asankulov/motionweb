@@ -22,6 +22,14 @@ const server = http.createServer(
         manufacturer: 'Russia',
         hasDiscount: false,
       },
+      {
+        title: 'Vacuum cleaner',
+        price: 2500,
+        article: 'Z0000130323',
+        weight: 2.5,
+        manufacturer: 'Germany',
+        hasDiscount: false,
+      }
     ];
     response.write(JSON.stringify(goods));
     response.end();
