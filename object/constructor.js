@@ -17,3 +17,9 @@ alikhan.run = function () {
   console.log('Run Alikhan, run!');
 }
 alikhan.run();
+
+
+const classicArray = [1, 2, 3, 4, 5, 6];
+
+console.log(array);
+console.log(array.length);
