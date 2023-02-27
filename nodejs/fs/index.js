@@ -1,16 +1,20 @@
 const fs = require('fs');
 
-// fs.readFile(
-//   './example.txt',
-//   { encoding: 'utf-8' },
-//   (err, data) => {
-//     if (err) {
-//       console.log(err);
-//     } else {
-//       console.log('file data: ', data);
-//     }
-//   },
-// );
+fs.readFile(
+  './example.txt',
+  { encoding: 'utf-8' },
+  (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      fs.writeFile('./example-1.txt', data, (err) => {
+        fs.appendFile('./example-2.txt', data, (err) => {
+          console.log()
+        })
+      });
+    }
+  },
+);
 
 // const data = fs.readFileSync('./example.txt', { encoding: 'utf-8' });
 
